@@ -3,16 +3,15 @@ $(document).ready(function() {
     const rows = $('table tr').not(":first");
     
     $('#btn-next').click(function() {
-        if (index === -1 || index === 0) {
+        index = (index + 1) % rows.length;
+
+        if (index === 0) {
             rows.css("color", "black");
-            index = 0;
             rows.eq(index).css("color", "red");
-            index++;
         }
-        else {
+        if (index > 0) {
             rows.eq(index-1).css("color", "black");
             rows.eq(index).css("color", "red");
-            index = (index + 1) % rows.length;
         }
     });
 });
