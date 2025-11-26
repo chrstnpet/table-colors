@@ -14,4 +14,8 @@ $(document).ready(function() {
             rows.eq(index).css("color", "red");
         }
     });
+
+    $('#btn-clear').click(function() {
+        rows.css("color", "black");
+    });
 });
