@@ -1,5 +1,6 @@
 # Description
 
+## index.html
 In the index.html file there is a table that displays dummy information about some people.
 
 ## style.css 
